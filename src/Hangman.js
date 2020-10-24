@@ -73,6 +73,7 @@ class Hangman extends Component {
     return (
       <div className='Hangman'>
         <h1>Hangman</h1>
+        <p>Guess the word or Get Hanged</p>
         <img src={this.props.images[this.state.nWrong]} alt={altText} />
         <p>Wrong Guesses: {this.state.nWrong}</p>
         <p className='Hangman-word'>
@@ -83,7 +84,7 @@ class Hangman extends Component {
         <p className='Hangman-btns'>
           {gameState}
         </p>
-        <button onClick={this.restart}>Restart EVerything All</button>
+        <button onClick={this.restart}>Restart Everything</button>
       </div>
     );
   }
